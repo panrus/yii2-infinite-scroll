@@ -1,5 +1,5 @@
 {
-  "name": "darkcs/yii2-infinite-scroll",
+  "name": "panrus/yii2-infinite-scroll",
   "description": "Link pager with infinite scroll support.",
   "type": "yii2-extension",
   "keywords": [
@@ -23,7 +23,7 @@
   },
   "autoload": {
     "psr-4": {
-      "darkcs\\infinitescroll\\": ""
+      "panrus\\infinitescroll\\": ""
     }
   }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace darkcs\infinitescroll;
+namespace panrus\infinitescroll;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Json;
@@ -13,6 +13,7 @@ class InfiniteScrollPager extends LinkPager
     public $paginationSelector = '.pagination';
     public $nextSelector = '.pagination .next a:first';
     public $wrapperSelector = '.list-view';
+    public $loadingText = '<div style="text-align: center;">loading...</div>';
     public $bufferPx = 40;
     public $pjaxContainer = null;
     public $autoStart = true;
@@ -35,6 +36,7 @@ class InfiniteScrollPager extends LinkPager
             ],
             'bufferPx' => $this->bufferPx,
             'wrapper' => $this->wrapperSelector,
+            'loadingText' => $this->loadingText,
             'alwaysHidePagination' => $this->alwaysHidePagination,
         ];
 

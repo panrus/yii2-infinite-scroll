@@ -6,7 +6,7 @@ Installation
 ------------
 
 ```
-php composer.phar require --prefer-dist "darkcs/yii2-infinite-scroll" "*"
+php composer.phar require --prefer-dist "panrus/yii2-infinite-scroll" "*"
 ```
 
 Options
@@ -34,7 +34,7 @@ echo \yii\widgets\ListView::widget([
     'summary' => false,
     'layout' => '{items}<div class="pagination-wrap">{pager}</div>',
     'pager' => [
-        'class' => \darkcs\infinitescroll\InfiniteScrollPager::className(),
+        'class' => \panrus\infinitescroll\InfiniteScrollPager::className(),
         'paginationSelector' => '.pagination-wrap',
         'pjaxContainer' => $pjax->id,
     ],
